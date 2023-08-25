@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+html{
+    overflow: hidden;
+}
+#box{
+    padding: 5px;
+    min-width: 300px;
+    max-width: 800px;
+    border: 1px solid gray;
+    margin: 5px auto;
+}
+#box img{
+    width: calc(100% / 4 - 10px);
+    height: calc(100% / 3);
+    border: 3px dashed black;
+    margin: 5px;
+    padding:5px;
+    border-radius: 10px;
+    background-color: #80808021;
+    cursor: pointer;
+}
+@media (max-width:530px){
+    #box img{
+        border-width: 2px;
+        border-radius: 5px;
+    }
+}
